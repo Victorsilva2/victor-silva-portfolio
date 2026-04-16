@@ -34,7 +34,7 @@ const PROFILE = {
     ],
     outsideOfWork:
       "Outside of tech, I’m into sports—basketball is my favorite to play. I also watch football, baseball, and basketball, and I recently started learning golf.",
-    note: "If you’re not sure where I fit yet, I’m happy to start broad and earn trust quickly.",
+    note: "",
   },
   socials: [
     { label: "GitHub", href: "https://github.com/Victorsilva2", kind: "github" },
@@ -447,7 +447,16 @@ function init() {
   setText("aboutIntro", PROFILE.about.intro);
   setText("lookingFor", PROFILE.about.lookingFor);
   setText("outsideOfWork", PROFILE.about.outsideOfWork);
-  setText("aboutNote", PROFILE.about.note);
+  const aboutNote = $("aboutNote");
+  if (aboutNote) {
+    if (PROFILE.about.note) {
+      aboutNote.hidden = false;
+      aboutNote.textContent = PROFILE.about.note;
+    } else {
+      aboutNote.hidden = true;
+      aboutNote.textContent = "";
+    }
+  }
 
   const bullets = $("aboutBullets");
   if (bullets) {
