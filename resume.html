@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Resume | Victor Marques Silva</title>
+    <meta
+      name="description"
+      content="Resume for Victor Marques Silva — Computer Science graduate."
+    />
+    <link rel="canonical" href="https://victor-silva-portfolio.vercel.app/resume.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Victor Marques Silva" />
+    <meta property="og:title" content="Resume | Victor Marques Silva" />
+    <meta
+      property="og:description"
+      content="Resume for Victor Marques Silva — Computer Science graduate."
+    />
+    <meta property="og:url" content="https://victor-silva-portfolio.vercel.app/resume.html" />
+    <meta property="og:image" content="https://victor-silva-portfolio.vercel.app/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Resume | Victor Marques Silva" />
+    <meta
+      name="twitter:description"
+      content="Resume for Victor Marques Silva — Computer Science graduate."
+    />
+    <meta name="twitter:image" content="https://victor-silva-portfolio.vercel.app/og-image.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .resume-shell {
+        padding: 36px 0 64px;
+      }
+      .resume-card {
+        border: 1px solid var(--border);
+        background: var(--panel);
+        border-radius: var(--radius2);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+      .resume-top {
+        padding: 18px 18px 14px;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .resume-top h1 {
+        margin: 0;
+        font-size: 26px;
+        letter-spacing: -0.02em;
+      }
+      .resume-meta {
+        color: var(--muted);
+        font-weight: 750;
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .resume-body {
+        padding: 18px;
+        display: grid;
+        gap: 18px;
+      }
+      .r-section h2 {
+        margin: 0 0 10px;
+        font-size: 14px;
+        color: var(--faint);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .r-item {
+        border: 1px solid var(--border);
+        background: rgba(0, 0, 0, 0.06);
+        border-radius: var(--radius);
+        padding: 14px 14px;
+        display: grid;
+        gap: 8px;
+      }
+      html[data-theme="light"] .r-item {
+        background: rgba(10, 15, 30, 0.03);
+      }
+      .r-topline {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .r-title {
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+      .r-where {
+        color: var(--muted);
+        font-weight: 800;
+      }
+      .r-when {
+        color: var(--faint);
+        font-weight: 850;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .r-item ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        font-weight: 650;
+      }
+      .r-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+      @media (max-width: 780px) {
+        .r-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .print-note {
+        color: var(--faint);
+        font-weight: 650;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+      @media print {
+        .site-header,
+        .site-footer,
+        .print-hide {
+          display: none !important;
+        }
+        body {
+          background: white !important;
+          color: black !important;
+        }
+        .resume-card,
+        .r-item {
+          box-shadow: none !important;
+          background: white !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header print-hide">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Back to portfolio">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Portfolio</span>
+        </a>
+        <div class="header-actions">
+          <button
+            class="icon-button"
+            type="button"
+            id="themeToggle"
+            aria-label="Toggle theme"
+            aria-pressed="false"
+          >
+            <span class="icon" aria-hidden="true" id="themeIcon"></span>
+          </button>
+          <a class="button primary" href="./index.html#contact">Get in touch</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="resume-shell">
+      <div class="container">
+        <div class="resume-card">
+          <div class="resume-top">
+            <div>
+              <h1>Victor Marques Silva</h1>
+              <div class="resume-meta">
+                <span>Edinburg, Texas</span>
+                <span>•</span>
+                <a href="mailto:victor.silvaa920@gmail.com">victor.silvaa920@gmail.com</a>
+                <span>•</span>
+                <a href="tel:(956) 961-8304">(956) 961-8304</a>
+                <span>•</span>
+                <a
+                  href="https://github.com/Victorsilva2"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >github.com/Victorsilva2</a
+                >
+              </div>
+              <p class="print-note">
+                Print-friendly: use your browser’s Print → “Save as PDF”.
+              </p>
+            </div>
+
+            <div class="print-hide" style="display:flex; gap:10px; flex-wrap:wrap">
+              <a
+                class="button primary"
+                href="./assets/resume/Victor-Marques-Silva-Resume.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Save as PDF
+              </a>
+              <a class="button ghost" href="./assets/resume/Victor-Marques-Silva-Resume.pdf" download>
+                Download PDF
+              </a>
+              <button class="button ghost" type="button" onclick="window.print()">
+                Print this page
+              </button>
+              <a class="button ghost" href="./index.html">Back</a>
+            </div>
+          </div>
+
+          <div class="resume-body">
+            <section class="r-section">
+              <h2>Objective</h2>
+              <div class="r-item">
+                <div style="color:var(--muted); font-weight:650">
+                  Computer Science graduate with experience in web development and
+                  hardware/software support. Strong analytical and problem-solving
+                  skills with the ability to build, troubleshoot, and improve technical
+                  systems.
+                </div>
+              </div>
+            </section>
+
+            <section class="r-section">
+              <h2>Education</h2>
+              <div class="r-item">
+                <div class="r-topline">
+                  <div>
+                    <span class="r-title">University of Texas Rio Grande Valley</span>
+                    <span class="r-where"> · Edinburg, TX</span>
+                  </div>
+                  <div class="r-when">Aug 2025</div>
+                </div>
+                <div style="color:var(--muted); font-weight:650">
+                  Bachelor of Science in Computer Science
+                </div>
+              </div>
+            </section>
+
+            <section class="r-section">
+              <h2>Experience</h2>
+
+              <div class="r-item">
+                <div class="r-topline">
+                  <div>
+                    <span class="r-title">Advanced Repair Agent</span>
+                    <span class="r-where"> · Geek Squad · McAllen, TX</span>
+                  </div>
+                  <div class="r-when">Oct 2025 – Present</div>
+                </div>
+                <ul>
+                  <li>
+                    Diagnose, analyze, and resolve hardware/software issues by identifying root
+                    causes to improve system performance.
+                  </li>
+                  <li>
+                    Maintain detailed service records and documentation for accuracy, compliance,
+                    and repair tracking.
+                  </li>
+                  <li>
+                    Provide technical support to customers, translating complex issues into clear,
+                    actionable solutions.
+                  </li>
+                  <li>
+                    Identify recurring issues and contribute to process improvements to reduce
+                    repeat failures.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="r-item">
+                <div class="r-topline">
+                  <div>
+                    <span class="r-title">Freelance Web Developer</span>
+                    <span class="r-where"> · Cantu Construction · McAllen, TX</span>
+                  </div>
+                  <div class="r-when">Oct 2025 – Dec 2025</div>
+                </div>
+                <ul>
+                  <li>
+                    Designed and implemented a responsive website for a commercial construction
+                    company.
+                  </li>
+                  <li>
+                    Optimized site structure, performance, and accessibility across devices.
+                  </li>
+                  <li>
+                    Developed full-stack features, including contact forms and interactive
+                    components.
+                  </li>
+                  <li>
+                    Collaborated with stakeholders to align technical solutions with business goals
+                    and user experience.
+                  </li>
+                </ul>
+                <div style="margin-top:8px; color:var(--muted); font-weight:750">
+                  Link:
+                  <a href="https://www.cantuconstruction.com/" target="_blank" rel="noreferrer noopener"
+                    >cantuconstruction.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="r-item">
+                <div class="r-topline">
+                  <div>
+                    <span class="r-title">Student Assistant</span>
+                    <span class="r-where">
+                      · College of Engineering &amp; Computer Science · Edinburg, TX</span
+                    >
+                  </div>
+                  <div class="r-when">Jan 2022 – Jul 2025</div>
+                </div>
+                <ul>
+                  <li>
+                    Provided technical support across classrooms and labs, ensuring system
+                    reliability and minimal downtime.
+                  </li>
+                  <li>
+                    Troubleshot hardware and software issues by analyzing system behavior and
+                    identifying root causes.
+                  </li>
+                  <li>
+                    Managed work orders and tracked issue resolution to improve response
+                    efficiency.
+                  </li>
+                  <li>
+                    Assisted with compliance-related processes, maintaining accurate documentation
+                    and adherence to procedures.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="r-section">
+              <h2>Technical Skills</h2>
+              <div class="r-grid">
+                <div class="r-item">
+                  <div class="r-title">Programming</div>
+                  <div style="color:var(--muted); font-weight:650">
+                    C++, Java, Python, JavaScript, SQL (PostgreSQL/MySQL), HTML/CSS
+                  </div>
+                </div>
+                <div class="r-item">
+                  <div class="r-title">IT &amp; Systems</div>
+                  <div style="color:var(--muted); font-weight:650">
+                    Troubleshooting, system diagnostics, hardware/software support, Linux
+                  </div>
+                </div>
+                <div class="r-item">
+                  <div class="r-title">Software &amp; Tools</div>
+                  <div style="color:var(--muted); font-weight:650">
+                    GitHub, Microsoft Excel/Word/PowerPoint, Access (basic)
+                  </div>
+                </div>
+                <div class="r-item">
+                  <div class="r-title">Strengths</div>
+                  <div style="color:var(--muted); font-weight:650">
+                    Communication, attention to detail, compliance, adaptability, problem analysis,
+                    documentation, process improvement
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer print-hide">
+      <div class="container footer-inner">
+        <p>Victor Marques Silva · <span id="footerYear"></span></p>
+        <a class="to-top" href="./index.html">Back to portfolio</a>
+      </div>
+    </footer>
+
+    <script>
+      // minimal theme parity with main page
+      const ICONS = {
+        moon:
+          "M12.3 2.1a1 1 0 0 1 .6 1.3 7.1 7.1 0 0 0 9 9 1 1 0 0 1 1.2.7 1 1 0 0 1-.3 1.2A10.2 10.2 0 1 1 11.2 1.8a1 1 0 0 1 1.1.3z",
+        sun:
+          "M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-16a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Zm0 18a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM2 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm18 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1Z",
+      };
+      function svgMask(path) {
+        const encoded = encodeURIComponent(
+          `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="${path}"/></svg>`,
+        );
+        return `url("data:image/svg+xml,${encoded}")`;
+      }
+      const icon = document.getElementById("themeIcon");
+      const btn = document.getElementById("themeToggle");
+      const year = document.getElementById("footerYear");
+      if (year) year.textContent = String(new Date().getFullYear());
+
+      function setTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        localStorage.setItem("theme", theme);
+        const isLight = theme === "light";
+        if (btn) btn.setAttribute("aria-pressed", String(isLight));
+        if (icon) icon.style.maskImage = svgMask(isLight ? ICONS.moon : ICONS.sun);
+      }
+      const saved = localStorage.getItem("theme");
+      const preferred =
+        window.matchMedia?.("(prefers-color-scheme: light)")?.matches ? "light" : "dark";
+      setTheme(saved || preferred);
+      btn?.addEventListener("click", () => {
+        setTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light");
+      });
+
+    </script>
+  </body>
+</html>
+
